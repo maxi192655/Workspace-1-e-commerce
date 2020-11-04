@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             if (inputEmail.value, inputPassword.value) {
                 
                 //Almaceno informacion en la computadora del usuario y con setItem pasa 2 valores el nombre y el valor de inputEmail
-                sessionStorage.setItem('User-Logged', JSON.stringify({ email: inputEmail.value}));
+                localStorage.setItem('User-Logged', JSON.stringify({ email: inputEmail.value}));
                 
                 window.location = 'Inicio.html';
             } else {

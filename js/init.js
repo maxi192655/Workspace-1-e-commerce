@@ -46,7 +46,7 @@ var getJSONData = function(url){
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function(e){
 
-    let userLogged = sessionStorage.getItem('User-Logged');
+    let userLogged = localStorage.getItem('User-Logged');
     let infoUser = document.getElementById("info-user");
     let user = document.getElementById("user");
     let newComm = document.getElementById("newComm");
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 //agrego eventos al boton de login
     document.getElementById("Salirlogin").addEventListener("click", function(){
      //elimina el elemento usuario
-      sessionStorage.removeItem('User-Logged');
+      localStorage.removeItem('User-Logged');
       //elimina el elemento perfil de My-profile
       localStorage.removeItem('perfil');
       //redirecciono al login 
