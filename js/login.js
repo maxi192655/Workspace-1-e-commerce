@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
         let camposCompletos = true;
 
         if (inputEmail.value === '') {
-            inputEmail.classList.add("invalid");
+            inputEmail.classList.add("is-invalid");
             camposCompletos = false;
         }
         if (inputPassword.value === '') {
-            inputPassword.classList.add("invalid");
+            inputPassword.classList.add("is-invalid");
             camposCompletos = false;
         }
         if (camposCompletos) {

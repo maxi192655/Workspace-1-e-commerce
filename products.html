@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="site-header sticky-top py-1 bg-dark">
+  <nav class="site-header sticky-top py-1 bg-dark row">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
       <a class="py-2 d-none d-md-inline-block" href="Inicio.html">Inicio</a>
       <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
@@ -56,9 +56,9 @@
 
         <div id="barraDeBusqueda">
 
-          <h5>Buscar por nombre</h5>
+          <h5></h5>
           
-          <input type="text" id="buscador">
+          <input  type="text" id="buscador" placeholder="Buscar por nombre">
 
           <button id="limpBusqueda" class="btn btn-dark">Limpiar busqueda</button>
 
@@ -78,7 +78,11 @@
 
     </div>
     <hr>
-    <div id="Listado"></div>
+    <div class="container" >
+      <div class="row" id="Listado">
+
+      </div>
+    </div>
   </div>
   <footer class="text-muted bg-light">
     <div class="container">

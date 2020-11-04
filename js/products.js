@@ -45,21 +45,27 @@ function showProducts(array) {
 
             if (buscar == undefined || product.name.toLowerCase().indexOf(buscar) != -1) {
                 contenido += `
-        <a href="product-info.html" class="list-group-item list-group-item-action">
-            <div class="row">
-                <div class="col-3">
-                    <img src="` + product.imgSrc + `" alt="` + product.description + `" class="img-thumbnail">
-                </div>  
-                <div class="col">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h4 class="mb-1">` + '<strong>' + product.name + '</strong>' + `</h4>
-                        <small class="text-muted">` + product.soldCount + ` Unidades vendidas</small>
+        
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="product-info.html" class="list-group-item list-group-item-action">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-img-top">
+                            <img src="` + product.imgSrc + `" alt="` + product.description + `" class="img-thumbnail">
+                        </div>  
+                        <div class="card-body">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h4 class="mb-1">` + '<strong>' + product.name + '</strong>' + `</h4>
+                            </div>
+                            <p class="mb-1">`+ '<strong>Descripcion: </strong>' + product.description + `</p>
+                            <p class="mb-1">` + '<strong>Precio: </strong>' + product.cost + product.currency + `</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">` + product.soldCount + ` Unidades vendidas</small>
+                        </div>
                     </div>
-                    <p class="mb-1">`+ '<strong>Descripcion: </strong>' + product.description + `</p>
-                    <p class="mb-1">` + '<strong>Precio: </strong>' + product.cost + product.currency + `</p>
-                </div>
+                </a>
             </div>
-        </a>
+        
         `
             }
         }

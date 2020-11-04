@@ -57,9 +57,13 @@ document.addEventListener("DOMContentLoaded", function(e){
       infoUser.style = "display: inline-block";
     }
     
-
+//agrego eventos al boton de login
     document.getElementById("Salirlogin").addEventListener("click", function(){
+     //elimina el elemento usuario
       sessionStorage.removeItem('User-Logged');
+      //elimina el elemento perfil de My-profile
+      localStorage.removeItem('perfil');
+      //redirecciono al login 
       window.location = 'index.html';
     });
 
