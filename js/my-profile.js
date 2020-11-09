@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         document.getElementById("Telefono").value = perfil.Telefono;
 
     }
-
+//sumo label e-mail
     document.getElementById("Guardar").addEventListener("click", function (e) {
         let camposCompletos = true;
         let imgUrl = document.getElementById("imgUrl");
